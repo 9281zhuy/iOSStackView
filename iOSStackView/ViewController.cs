@@ -14,6 +14,7 @@ namespace iOSStackView
 			this.Storyboard.InstantiateViewController("home") as HomeController;
 			// TODO: add code to pass a value to the HomeController 
 			controller.UserName = txtUser.Text;
+			controller.Email = txtEmail.Text;
 			this.NavigationController.PushViewController(controller, true);
 		}
 

@@ -18,10 +18,13 @@ namespace iOSStackView
         }
 
 		public string UserName;
+		public string Email;
+
 		public override void ViewDidLoad()
 		{
 			base.ViewDidLoad();
 			lblUser.Text = UserName;
+			lblEmail.Text = Email;
 		}
     }
 }

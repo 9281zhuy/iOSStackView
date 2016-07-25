@@ -20,6 +20,10 @@ namespace iOSStackView
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UITextField lblEmail { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITextField lblUser { get; set; }
 
         [Action ("BtnBack_TouchUpInside:")]
@@ -31,6 +35,11 @@ namespace iOSStackView
             if (btnBack != null) {
                 btnBack.Dispose ();
                 btnBack = null;
+            }
+
+            if (lblEmail != null) {
+                lblEmail.Dispose ();
+                lblEmail = null;
             }
 
             if (lblUser != null) {

@@ -20,6 +20,10 @@ namespace iOSStackView
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UITextField txtEmail { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITextField txtUser { get; set; }
 
         [Action ("Btnlogin_TouchUpInside:")]
@@ -31,6 +35,11 @@ namespace iOSStackView
             if (btnlogin != null) {
                 btnlogin.Dispose ();
                 btnlogin = null;
+            }
+
+            if (txtEmail != null) {
+                txtEmail.Dispose ();
+                txtEmail = null;
             }
 
             if (txtUser != null) {
